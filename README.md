@@ -12,6 +12,19 @@ Developed a multi-page Power BI IT Operations Analytics Dashboard focused on inc
 <img width="1241" height="684" alt="Incident Analysis" src="https://github.com/user-attachments/assets/4c93c890-b077-42ac-b225-0ec52281028b" />
 </p>
 
-
-
 # Project Breakdown
+
+### Step 1 — Data Collection & Dataset Preparation
+
+Collected and prepared datasets from multiple source files to simulate a realistic enterprise IT incident management environment. Mock operational data was generated using :contentReference[oaicite:0]{index=0} to replicate enterprise-style incident ticketing workflows and infrastructure relationships.
+
+The project primarily utilized CSV and Excel source files; however, relational database design principles and table cardinality were considered throughout the data modeling process. The dataset structure could also be effectively migrated into a SQL-based relational DBMS environment.
+
+#### Source Files
+- `incidents.csv`
+- `cmdb_servers.xlsx`
+- `technicians.csv`
+- `changes.csv`
+- `calendar.csv`
+
+
