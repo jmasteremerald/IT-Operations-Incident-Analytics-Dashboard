@@ -16,7 +16,7 @@ Developed a multi-page Power BI IT Operations Analytics Dashboard focused on inc
 
 ### Step 1 — Data Collection & Dataset Preparation
 
-Collected and prepared datasets from multiple source files to simulate a realistic enterprise IT incident management environment. Mock operational data was generated using :contentReference[oaicite:0]{index=0} to replicate enterprise-style incident ticketing workflows and infrastructure relationships.
+Collected and prepared datasets from multiple source files to simulate a realistic enterprise IT incident Ticket management environment. Mock operational data was generated using Tonic Fabric AI to replicate enterprise-style incident ticketing workflows and infrastructure relationships.
 
 The project primarily utilized CSV and Excel source files; however, relational database design principles and table cardinality were considered throughout the data modeling process. The dataset structure could also be effectively migrated into a SQL-based relational DBMS environment.
 
