@@ -27,4 +27,23 @@ The project primarily utilized CSV and Excel source files; however, relational d
 - `changes.csv`
 - `calendar.csv`
 
+### Step 2 — Data Cleaning & Transformation
+
+Using Power BI’s Power Query Editor, I performed a series of data cleaning and transformation tasks on the CMDB server inventory and supporting datasets to improve data quality, consistency, and reporting accuracy.
+
+Cleaning tasks included:
+- Removing duplicate records
+- Removing empty/null rows
+- Standardizing inconsistent naming conventions using Find & Replace
+- Trimming leading and trailing whitespace from records
+- Validating column formatting and data consistency across related tables
+
+Some records contained inconsistent environment and server naming conventions, which were standardized to ensure accurate filtering, grouping, and relationship mapping within the data model.
+
+<p align="center">
+<img width="541" height="729" alt="image" src="https://github.com/user-attachments/assets/7fd538b9-d20a-42f8-aa34-8d710e7d807d" />
+<img width="379" height="326" alt="Screenshot 2026-05-25 at 10 51 55 AM" src="https://github.com/user-attachments/assets/71d1bb14-6c00-4cf1-8abf-81c7a4ced5da" />
+</p>
+
+
 
