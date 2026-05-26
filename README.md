@@ -116,9 +116,9 @@ DATEDIFF(
 
 
 
+# Data Visualization and Analysis  
 
-
-# Dashboard 1 — Incident Analysis
+## Dashboard 1 — Incident Analysis
 
 | Visualization | Dashboard Preview |
 |---|---|
@@ -130,7 +130,7 @@ DATEDIFF(
 
 ---
 
-# Dashboard 2 — Trends & Monitoring
+## Dashboard 2 — Trends & Monitoring
 
 | Visualization | Dashboard Preview |
 |---|---|
