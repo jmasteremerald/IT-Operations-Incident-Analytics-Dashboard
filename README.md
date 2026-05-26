@@ -113,6 +113,29 @@ DATEDIFF(
 )
 ```
 
+# Dashboard 1 — Incident Analysis
+
+| Visualization | Description | Dashboard Preview |
+|---|---|---|
+| **Number of Incidents by Assignment Group**  <br><br> **Chart Type:** Horizontal Bar Chart  <br><br> **Purpose:** Used to compare workload distribution across IT support teams and identify which departments handle the highest incident volume. Horizontal bars improve readability for long assignment group names.  <br><br> **Insights:** Windows Server Team handled the highest number of incidents, while Unix Administration handled the fewest. The chart highlights operational workload distribution across support teams. |  | <img width="500" height="280"/> |
+| **SLA Compliance % by Yearly Quarter**  <br><br> **Chart Type:** Combo Chart (Bar + Line)  <br><br> **Metrics:** Incident Count, SLA Compliance %  <br><br> **Purpose:** Combines operational volume and SLA performance into a single visualization to evaluate whether ticket volume impacts SLA success rates.  <br><br> **Insights:** SLA compliance fluctuated across quarters, with Q1 2026 showing a noticeable drop despite consistent operational volume. |  | <img width="500" height="280"/> |
+| **Incident Distribution by Environment**  <br><br> **Chart Type:** Clustered Column Chart  <br><br> **Purpose:** Used to compare incident volume across environments and identify where the majority of operational issues occur.  <br><br> **Insights:** Production generated the majority of incidents, while Development and QA environments produced significantly fewer tickets. |  | <img width="500" height="280"/> |
+| **SLA Breach Distribution**  <br><br> **Chart Type:** Doughnut Chart  <br><br> **Metrics:** SLA_Breached (True/False)  <br><br> **Purpose:** Provides a high-level KPI view of SLA compliance versus breach rates.  <br><br> **Insights:** Most incidents met SLA requirements, though breaches still represented operational risk and service impact. |  | <img width="500" height="280"/> |
+| **Average Resolution Time by Team**  <br><br> **Chart Type:** Horizontal Bar Chart  <br><br> **Metric:** Average MTTR  <br><br> **Purpose:** Compares operational efficiency between support teams and identifies resolution bottlenecks.  <br><br> **Insights:** Unix Administration showed the longest average resolution time, while the Backup & Recovery Team resolved incidents the fastest. |  | <img width="500" height="280"/> |
+
+---
+
+# Dashboard 2 — Trends & Monitoring
+
+| Visualization | Description | Dashboard Preview |
+|---|---|---|
+| **Incident Volume Trend**  <br><br> **Chart Type:** Line Chart  <br><br> **Metric:** Monthly Incident Count  <br><br> **Purpose:** Used for time-series trend analysis to identify increases, decreases, and seasonal operational spikes in incident activity.  <br><br> **Insights:** Incident activity peaked during mid-2024 and fluctuated across months, supporting operational forecasting and workload planning. |  | <img width="500" height="280"/> |
+| **Ticket Status by Month**  <br><br> **Chart Type:** Stacked Column Chart  <br><br> **Metrics:** Open, In Progress, and Closed Tickets  <br><br> **Purpose:** Displays ticket lifecycle distribution over time and monitors backlog trends across operational workflows.  <br><br> **Insights:** Most tickets were successfully closed monthly, while open ticket counts remained relatively low. |  | <img width="500" height="280"/> |
+| **Incident Priority Distribution**  <br><br> **Chart Type:** Doughnut Chart  <br><br> **Metrics:** P1, P2, P3, and P4 Priority Counts  <br><br> **Purpose:** Highlights the proportional distribution of incident severity levels and operational risk exposure.  <br><br> **Insights:** P3 and P4 incidents represented the majority of tickets, while critical P1 incidents remained relatively rare. |  | <img width="500" height="280"/> |
+| **Incident Reopen Trend**  <br><br> **Chart Type:** Clustered Column Chart  <br><br> **Metrics:** Reopened (True/False)  <br><br> **Purpose:** Tracks service quality and ticket resolution effectiveness by monitoring reopen activity over time.  <br><br> **Insights:** Reopened incidents remained relatively low overall, though certain months experienced temporary spikes in reopen activity. |  | <img width="500" height="280"/> |
+
+
+
 
 
 
