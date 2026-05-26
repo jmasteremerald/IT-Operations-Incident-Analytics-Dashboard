@@ -91,19 +91,24 @@ DIVIDE(
     ),
     COUNT(Incidents[IncidentID])
 )
+```
 
+```DAX
 Avg Ticket Age =
 AVERAGE(incidents[Ticket Age Days])
-
+```
+```DAX
 Avg MTTR =
 AVERAGE(Incidents[ResolutionTimeHours])
-
+```
+```DAX
 Ticket Age Days =
 DATEDIFF(
     incidents[OpenDateTime],
     COALESCE(incidents[ClosedDateTime], NOW()),
     DAY
 )
+```
 
 
 
