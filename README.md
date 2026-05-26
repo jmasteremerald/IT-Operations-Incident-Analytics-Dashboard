@@ -73,6 +73,11 @@ Additional calculated measures and custom columns were created using DAX (Data A
 | `CMDB Servers` → `changes` | `1 : *` | One server can be associated with many change records |
 | `technicians` → `incidents` | `1 : *` | One technician can be assigned to many incidents |
 
+#### Semantic Model
+
+<img width="1370" height="654" alt="image" src="https://github.com/user-attachments/assets/d6435d8a-5e80-45d7-9fa3-dba9444faa6a" />
+
+
 #### DAX Measures & Calculated Columns
 
 | Measure / Column | Purpose |
