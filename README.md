@@ -13,7 +13,7 @@ Developed a multi-page Power BI IT Operations Analytics Dashboard focused on inc
 - CSV / Excel Data Sources
 - Tonic Fabricate AI
   
-### Dashboards
+## Dashboards
 <p align="center">
 <h3>Incident Analysis</h3>
 <img width="1241" height="684" alt="Trends and Backlog" src="https://github.com/user-attachments/assets/89c19727-3ce9-41b7-b49f-99f906b21f9f" />
