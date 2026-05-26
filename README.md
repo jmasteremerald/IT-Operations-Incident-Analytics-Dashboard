@@ -112,16 +112,22 @@ DATEDIFF(
     DAY
 )
 ```
+<img width="349" height="283" alt="image" src="https://github.com/user-attachments/assets/85214d3b-7fd4-4f52-82ee-0e8a88607fb2" />
+
+
+
 
 # Dashboard 1 — Incident Analysis
 
 | Visualization | Description | Dashboard Preview |
 |---|---|---|
-| **Number of Incidents by Assignment Group**  <br><br> **Chart Type:** Horizontal Bar Chart  <br><br> **Purpose:** Used to compare workload distribution across IT support teams and identify which departments handle the highest incident volume. Horizontal bars improve readability for long assignment group names.  <br><br> **Insights:** Windows Server Team handled the highest number of incidents, while Unix Administration handled the fewest. The chart highlights operational workload distribution across support teams. |  | <img width="500" height="280"/> |
-| **SLA Compliance % by Yearly Quarter**  <br><br> **Chart Type:** Combo Chart (Bar + Line)  <br><br> **Metrics:** Incident Count, SLA Compliance %  <br><br> **Purpose:** Combines operational volume and SLA performance into a single visualization to evaluate whether ticket volume impacts SLA success rates.  <br><br> **Insights:** SLA compliance fluctuated across quarters, with Q1 2026 showing a noticeable drop despite consistent operational volume. |  | <img width="500" height="280"/> |
-| **Incident Distribution by Environment**  <br><br> **Chart Type:** Clustered Column Chart  <br><br> **Purpose:** Used to compare incident volume across environments and identify where the majority of operational issues occur.  <br><br> **Insights:** Production generated the majority of incidents, while Development and QA environments produced significantly fewer tickets. |  | <img width="500" height="280"/> |
-| **SLA Breach Distribution**  <br><br> **Chart Type:** Doughnut Chart  <br><br> **Metrics:** SLA_Breached (True/False)  <br><br> **Purpose:** Provides a high-level KPI view of SLA compliance versus breach rates.  <br><br> **Insights:** Most incidents met SLA requirements, though breaches still represented operational risk and service impact. |  | <img width="500" height="280"/> |
-| **Average Resolution Time by Team**  <br><br> **Chart Type:** Horizontal Bar Chart  <br><br> **Metric:** Average MTTR  <br><br> **Purpose:** Compares operational efficiency between support teams and identifies resolution bottlenecks.  <br><br> **Insights:** Unix Administration showed the longest average resolution time, while the Backup & Recovery Team resolved incidents the fastest. |  | <img width="500" height="280"/> |
+| **Number of Incidents by Assignment Group**  <br><br> **Chart Type:** Horizontal Bar Chart  <br><br> **Purpose:** Used to compare workload distribution across IT support teams and identify which departments handle the highest incident volume. Horizontal bars improve readability for long assignment group names.  <br><br> **Insights:** Windows Server Team handled the highest number of incidents, while Unix Administration handled the fewest. The chart highlights operational workload distribution across support teams. |  | <img width="500" height="280" alt="Incidents by Assignemnt Group" src="https://github.com/user-attachments/assets/c5946c62-3df1-46af-914b-2b923094340d"/> |
+| **SLA Compliance % by Yearly Quarter**  <br><br> **Chart Type:** Combo Chart (Bar + Line)  <br><br> **Metrics:** Incident Count, SLA Compliance %  <br><br> **Purpose:** Combines operational volume and SLA performance into a single visualization to evaluate whether ticket volume impacts SLA success rates.  <br><br> **Insights:** SLA compliance fluctuated across quarters, with Q1 2026 showing a noticeable drop despite consistent operational volume. |  | <img width="500" height="280" src="https://github.com/user-attachments/assets/7850d805-7c23-4911-ad2a-673a518e1e12"/> |
+| **Incident Distribution by Environment**  <br><br> **Chart Type:** Clustered Column Chart  <br><br> **Purpose:** Used to compare incident volume across environments and identify where the majority of operational issues occur.  <br><br> **Insights:** Production generated the majority of incidents, while Development and QA environments produced significantly fewer tickets. |  | <img width="500" height="280" src="https://github.com/user-attachments/assets/85214d3b-7fd4-4f52-82ee-0e8a88607fb2"/> |
+| **SLA Breach Distribution**  <br><br> **Chart Type:** Doughnut Chart  <br><br> **Metrics:** SLA_Breached (True/False)  <br><br> **Purpose:** Provides a high-level KPI view of SLA compliance versus breach rates.  <br><br> **Insights:** Most incidents met SLA requirements, though breaches still represented operational risk and service impact. |  | <img width="500" height="280" src="https://github.com/user-attachments/assets/cc82c775-e9c2-4f15-b1a3-bf9202738021"/>
+"/> |
+| **Average Resolution Time by Team**  <br><br> **Chart Type:** Horizontal Bar Chart  <br><br> **Metric:** Average MTTR  <br><br> **Purpose:** Compares operational efficiency between support teams and identifies resolution bottlenecks.  <br><br> **Insights:** Unix Administration showed the longest average resolution time, while the Backup & Recovery Team resolved incidents the fastest. |  | <img width="500" height="280" src="https://github.com/user-attachments/assets/0522bd3c-bc88-4aa0-b2cf-9b49d516e2c7"/> |
+
 
 ---
 
