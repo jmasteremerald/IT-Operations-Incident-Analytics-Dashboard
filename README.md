@@ -168,10 +168,5 @@ The dashboard analysis revealed that the Production environment generated the hi
 
 SLA performance remained relatively strong overall, with most incidents meeting SLA requirements; however, a noticeable compliance drop occurred during Q1 2026, highlighting periods of increased operational strain. Incident reopen rates remained consistently low, suggesting stable resolution quality and effective incident handling processes across most reporting periods.
 
-The project demonstrates how Power BI can be used to transform operational ITSM-style data into actionable business intelligence through semantic modeling, DAX-driven KPIs, interactive reporting, and enterprise-focused dashboard design.
-
-
-
-
 
 
