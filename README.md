@@ -34,11 +34,9 @@ Using Power BI’s Power Query Editor, I performed a series of data cleaning and
 Cleaning tasks included:
 - Removing duplicate records
 - Removing empty/null rows
-- Standardizing inconsistent naming conventions using Find & Replace
+- Standardizing inconsistent naming conventions using Find & Replace to ensure accurate filtering, grouping, and relationship mapping within the data model.
 - Trimming leading and trailing whitespace from records
 - Validating column formatting and data consistency across related tables
-
-Some records contained inconsistent environment and server naming conventions, which were standardized to ensure accurate filtering, grouping, and relationship mapping within the data model.
 
 ### Environment column before cleaning
 <img width="515" height="729" alt="image" src="https://github.com/user-attachments/assets/dd67ef13-184c-4c1a-b568-1600cfae5f95" />
