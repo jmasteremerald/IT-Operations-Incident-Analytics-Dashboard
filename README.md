@@ -73,6 +73,37 @@ Additional calculated measures and custom columns were created using DAX (Data A
 | `CMDB Servers` → `changes` | `1 : *` | One server can be associated with many change records |
 | `technicians` → `incidents` | `1 : *` | One technician can be assigned to many incidents |
 
+#### DAX Measures & Calculated Columns
+
+| Measure / Column | Purpose |
+|---|---|
+| `SLA Compliance %` | Calculates the percentage of incidents resolved within SLA requirements to monitor service performance and operational compliance. |
+| `Avg Ticket Age` | Measures the average age of tickets to help identify backlog growth and long-running unresolved incidents. |
+| `Avg MTTR` | Calculates the average Mean Time to Resolution (MTTR) to evaluate incident resolution efficiency and support team performance. |
+| `Ticket Age Days` | Calculates the number of days a ticket has remained open by comparing the open date against the close date (or current date if still open). Used for backlog aging analysis and ticket lifecycle reporting. |
+
+```DAX
+SLA Compliance % =
+DIVIDE(
+    CALCULATE(
+        COUNT(Incidents[IncidentID]),
+        Incidents[SLA_Breached] = FALSE()
+    ),
+    COUNT(Incidents[IncidentID])
+)
+
+Avg Ticket Age =
+AVERAGE(incidents[Ticket Age Days])
+
+Avg MTTR =
+AVERAGE(Incidents[ResolutionTimeHours])
+
+Ticket Age Days =
+DATEDIFF(
+    incidents[OpenDateTime],
+    COALESCE(incidents[ClosedDateTime], NOW()),
+    DAY
+)
 
 
 
