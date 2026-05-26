@@ -38,11 +38,10 @@ Cleaning tasks included:
 - Trimming leading and trailing whitespace from records
 - Validating column formatting and data consistency across related tables
 
-### Environment column before cleaning
-<img width="515" height="729" alt="image" src="https://github.com/user-attachments/assets/dd67ef13-184c-4c1a-b568-1600cfae5f95" />
-
-### Environment column after cleaning
-<img width="515" height="729" alt="image" src="https://github.com/user-attachments/assets/9e84e2e8-8674-4e93-bef4-390057bba231" />
+### Environment column before/after standardization
+| Before Cleaning | After Cleaning |
+|---|---|
+| <img width="350" alt="Before Cleaning" src="https://github.com/user-attachments/assets/dd67ef13-184c-4c1a-b568-1600cfae5f95" /> | <img width="350" alt="After Cleaning" src="https://github.com/user-attachments/assets/9e84e2e8-8674-4e93-bef4-390057bba231" /> |
 
 ### Step 3 — Data Modeling & DAX Development
 
