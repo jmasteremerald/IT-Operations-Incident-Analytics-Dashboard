@@ -46,6 +46,35 @@ Some records contained inconsistent environment and server naming conventions, w
 ### Environment column after cleaning
 <img width="515" height="729" alt="image" src="https://github.com/user-attachments/assets/9e84e2e8-8674-4e93-bef4-390057bba231" />
 
+### Step 3 — Data Modeling & DAX Development
+
+Designed and implemented a relational semantic data model in Power BI using a star schema architecture to support scalable reporting, KPI analysis, and cross-table filtering.
+
+The model was structured around centralized fact tables containing operational business activity, while surrounding dimension tables provided descriptive and contextual data for reporting and analytics. One-to-many relationships and cardinality were configured to ensure accurate filtering behavior and optimized model performance.
+
+Additional calculated measures and custom columns were created using DAX (Data Analysis Expressions) to support KPI tracking, SLA calculations, MTTR analysis, ticket aging metrics, and operational trend reporting.
+
+#### Fact Tables
+- `incidents.csv`
+- `changes.csv`
+
+#### Dimension Tables
+- `cmdb_servers.xlsx`
+- `technicians.csv`
+- `calendar.csv`
+
+#### Relationship Cardinality
+
+| Relationship | Cardinality | Description |
+|---|---|---|
+| `calendar` → `incidents` | `1 : *` | One calendar date can relate to many incident records |
+| `calendar` → `changes` | `1 : *` | One calendar date can relate to many change records |
+| `CMDB Servers` → `incidents` | `1 : *` | One server can be associated with many incidents |
+| `CMDB Servers` → `changes` | `1 : *` | One server can be associated with many change records |
+| `technicians` → `incidents` | `1 : *` | One technician can be assigned to many incidents |
+
+
+
 
 
 
