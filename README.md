@@ -124,7 +124,7 @@ DATEDIFF(
 )
 ```
 
-# Step 5 - Data Visualization and Analysis  
+## Step 5 - Data Visualization and Analysis  
 
 ### Dashboard 1 — Incident Analysis
 
