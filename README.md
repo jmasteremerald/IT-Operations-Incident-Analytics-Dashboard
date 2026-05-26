@@ -3,6 +3,17 @@
 <h3>IT-Operations Incident Analytics Dashboard</h3>
 Developed a multi-page Power BI IT Operations Analytics Dashboard focused on incident management, SLA compliance, backlog monitoring, and operational performance tracking. The project includes interactive KPI reporting, incident trend analysis, MTTR tracking, ticket status monitoring, backlog aging analysis, and priority distribution visualizations using realistic enterprise-style ITSM data. Built with a focus on operational storytelling, dashboard design consistency, and business intelligence best practices.
 
+# Technologies Used
+
+- Power BI
+- Power Query
+- DAX
+- Data Modeling
+- Star Schema
+- CSV / Excel Data Sources
+- Tonic Fabricate AI
+  
+### Dashboards
 <p align="center">
 <h3>Incident Analysis</h3>
 <img width="1241" height="684" alt="Trends and Backlog" src="https://github.com/user-attachments/assets/89c19727-3ce9-41b7-b49f-99f906b21f9f" />
@@ -13,6 +24,7 @@ Developed a multi-page Power BI IT Operations Analytics Dashboard focused on inc
 </p>
 
 # Project Breakdown
+
 
 ### Step 1 — Data Collection & Dataset Preparation
 
@@ -43,13 +55,11 @@ Cleaning tasks included:
 |---|---|
 | <img width="350" alt="Before Cleaning" src="https://github.com/user-attachments/assets/dd67ef13-184c-4c1a-b568-1600cfae5f95" /> | <img width="350" alt="After Cleaning" src="https://github.com/user-attachments/assets/9e84e2e8-8674-4e93-bef4-390057bba231" /> |
 
-### Step 3 — Data Modeling & DAX Development
+### Step 3 — Data Modeling & Cardinality
 
 Designed and implemented a relational semantic data model in Power BI using a star schema architecture to support scalable reporting, KPI analysis, and cross-table filtering.
 
 The model was structured around centralized fact tables containing operational business activity, while surrounding dimension tables provided descriptive and contextual data for reporting and analytics. One-to-many relationships and cardinality were configured to ensure accurate filtering behavior and optimized model performance.
-
-Additional calculated measures and custom columns were created using DAX (Data Analysis Expressions) to support KPI tracking, SLA calculations, MTTR analysis, ticket aging metrics, and operational trend reporting.
 
 #### Fact Tables
 - `incidents.csv`
@@ -75,7 +85,9 @@ Additional calculated measures and custom columns were created using DAX (Data A
 <img width="1370" height="654" alt="image" src="https://github.com/user-attachments/assets/d6435d8a-5e80-45d7-9fa3-dba9444faa6a" />
 
 
-#### DAX Measures & Calculated Columns
+### Step 4 — DAX Measures & KPI Development
+
+Created calculated measures and custom columns using DAX (Data Analysis Expressions) to support KPI tracking, SLA calculations, MTTR analysis, ticket aging metrics, and operational trend reporting.
 
 | Measure / Column | Purpose |
 |---|---|
@@ -112,10 +124,7 @@ DATEDIFF(
 )
 ```
 
-
-
-
-# Step 4 - Data Visualization and Analysis  
+# Step 5 - Data Visualization and Analysis  
 
 ### Dashboard 1 — Incident Analysis
 
@@ -137,6 +146,29 @@ DATEDIFF(
 | **Ticket Status by Month**  <br><br> **Chart Type:** Stacked Column Chart  <br><br> **Metrics:** Open, In Progress, and Closed Tickets  <br><br> **Purpose:** Displays ticket lifecycle distribution over time and monitors backlog trends across operational workflows.  <br><br> **Insights:** Most tickets were successfully closed monthly, while open ticket counts remained relatively low. | <img width="700" src="https://github.com/user-attachments/assets/282682ad-d4b0-4bb3-97e2-feae0ee52cad"/> |
 | **Incident Priority Distribution**  <br><br> **Chart Type:** Doughnut Chart  <br><br> **Metrics:** P1, P2, P3, and P4 Priority Counts  <br><br> **Purpose:** Highlights the proportional distribution of incident severity levels and operational risk exposure.  <br><br> **Insights:** P3 and P4 incidents represented the majority of tickets, while critical P1 incidents remained relatively rare. | <img width="420" alt="Incident Priority Distribution" src="https://github.com/user-attachments/assets/e3e9a387-f41d-4e58-ae55-f3178283b2ad"/> |
 | **Incident Reopen Trend**  <br><br> **Chart Type:** Clustered Column Chart  <br><br> **Metrics:** Reopened (True/False)  <br><br> **Purpose:** Tracks service quality and ticket resolution effectiveness by monitoring reopen activity over time.  <br><br> **Insights:** Reopened incidents remained relatively low overall, though certain months experienced temporary spikes in reopen activity. | <img width="700" src="https://github.com/user-attachments/assets/e7d529de-b5cb-4cba-934b-6e173c4922e4"/> |
+
+# Key KPIs Monitored
+
+| KPI | Purpose |
+|---|---|
+| **SLA Compliance %** | Measures the percentage of incidents resolved within SLA targets to evaluate overall service performance and operational compliance. |
+| **Average MTTR** | Tracks the average Mean Time to Resolution to measure incident response and resolution efficiency across support teams. |
+| **Average Ticket Age** | Monitors the average age of unresolved tickets to identify backlog growth and long-running incidents. |
+| **Incident Volume** | Measures overall ticket activity to evaluate operational workload trends and support demand. |
+| **SLA Breach Count** | Tracks incidents that failed to meet SLA requirements to identify operational risk and service gaps. |
+| **Incident Reopen Rate** | Measures how frequently incidents are reopened after resolution to evaluate service quality and resolution effectiveness. |
+| **Incident Priority Distribution** | Tracks the proportion of P1–P4 incidents to monitor operational severity and business impact trends. |
+| **Ticket Status Distribution** | Monitors Open, In Progress, and Closed tickets to evaluate workflow efficiency and backlog stability. |
+
+---
+
+# Operational Insights & Conclusion
+
+The dashboard analysis revealed that the Production environment generated the highest volume of incidents, indicating that production infrastructure remains the primary source of operational workload and support demand. Windows Server and Linux Operations teams handled the majority of incidents, while Unix Administration displayed the highest average resolution time, suggesting potential optimization opportunities within that support area.
+
+SLA performance remained relatively strong overall, with most incidents meeting SLA requirements; however, a noticeable compliance drop occurred during Q1 2026, highlighting periods of increased operational strain. Incident reopen rates remained consistently low, suggesting stable resolution quality and effective incident handling processes across most reporting periods.
+
+The project demonstrates how Power BI can be used to transform operational ITSM-style data into actionable business intelligence through semantic modeling, DAX-driven KPIs, interactive reporting, and enterprise-focused dashboard design.
 
 
 
